@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.dataset.lang;
-            // changeLang(lang);
+            setGoogleTranslateLanguage(lang);
         });
     });
 
@@ -106,3 +106,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+function setGoogleTranslateLanguage(lang) {
+    const translateFrame = document.querySelector('iframe.goog-te-menu-frame');
+    if (!translateFrame) {
+        alert('Google Translate is not fully loaded yet. Please try again.');
+        return;
+    }
+
+    const translateDoc = translateFrame.contentDocument || translateFrame.contentWindow.document;
+    const langButtons = translateDoc.querySelectorAll('.goog-te-menu2-item span.text');
+
+    langButtons.forEach(button => {
+        if (button.innerText.toLowerCase().includes(lang)) {
+            button.click();
+        }
+    });
+}
