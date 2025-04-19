@@ -110,7 +110,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function setGoogleTranslateLanguage(lang) {
     const translateFrame = document.querySelector('iframe.goog-te-menu-frame');
     if (!translateFrame) {
-        alert('Google Translate is not fully loaded yet. Please try again.');
+        alert('Google Translate is not fully loaded yet. Please wait a moment and try again.');
         return;
     }
 
