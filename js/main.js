@@ -1,6 +1,11 @@
 // Gestion du changement de langue
 document.addEventListener('DOMContentLoaded', () => {
     const langButtons = document.querySelectorAll('.lang-btn');
+
+    if (langButtons.length === 0) {
+        console.error('Language buttons not found in the DOM.');
+        return;
+    }
     
     langButtons.forEach(btn => {
         btn.addEventListener('click', () => {
