@@ -445,17 +445,18 @@ footer {
     border-radius: 3px;
 }
 
-/* Cache le logo Google Translate */
+/* Cacher le logo Google Translate et le texte */
 .goog-logo-link {
-    display: none !important;
+    display: none !important; /* Cache le logo */
 }
+
 .goog-te-gadget {
-    color: transparent !important;
+    color: transparent !important; /* Cache le texte */
 }
 
 /* Style de la bannière en haut */
 .goog-te-banner-frame {
-    display: none !important;
+    display: none !important; /* Cache la bannière */
 }
 
 /* Animations */
