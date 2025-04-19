@@ -11,10 +11,11 @@
 <body>
     <div id="google_translate_element" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
 
-    <div class="language-selector">
+    <!-- Remove custom language buttons -->
+    <!-- <div class="language-selector">
         <button class="lang-btn" data-lang="fr">FR</button>
         <button class="lang-btn" data-lang="en">EN</button>
-    </div>
+    </div> -->
 
     <video class="video-background" autoplay muted loop playsinline>
         <source src="./images/image.mp4" type="video/mp4">
@@ -28,10 +29,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="#recrutement">Recrutement</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" data-translate="accueil">Accueil</a></li>
+                <li><a href="#services" data-translate="services">Nos Services</a></li>
+                <li><a href="#recrutement" data-translate="recrutement">Recrutement</a></li>
+                <li><a href="#contact" data-translate="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -39,177 +40,19 @@
     <main>
         <section id="accueil" class="hero-section">
             <div class="hero-content">
-                <h2>BluePort Solutions, consignataire maritime à Nantes Saint-Nazaire</h2>
-                <p>Au service de vos escales, aujourd'hui et pour demain.</p>
-            </div>
-        </section>
-        <section id="presentation" class="section">
-            <div class="container">
-                <h2>Présentation</h2>
-                <div class="presentation-content">
-                    <!-- Ici viendra votre texte de présentation -->
-                    <p>BluePort Solutions est une entreprise de consignation maritime basée au port de Nantes Saint-Nazaire. En tant que consignataire, notre mission est de représenter les armateurs et d'assurer la coordination complète des escales de navires, de l'arrivée au port jusqu'au départ. Nous agissons en intermédiaire de confiance entre l'armateur, le navire et les acteurs portuaires locaux, veillant à ce que chaque escale se déroule de manière fluide, rapide et conforme aux réglementations.
-                        Ancrage local et expertise : Implantée au cœur du premier port de la façade atlantique française, BluePort Solutions s'appuie sur une équipe expérimentée et un réseau local solide. Notre connaissance approfondie du port de Nantes Saint-Nazaire et de sa communauté maritime nous permet d'anticiper les besoins de nos clients et de résoudre efficacement les imprévus. Fiabilité, discrétion et service sur mesure caractérisent notre approche : nous mettons un point d'honneur à respecter la confidentialité des opérations tout en garantissant une qualité de service irréprochable.
-                        Allier tradition et innovation : BluePort Solutions allie le savoir-faire classique du consignataire à une ouverture vers les nouvelles technologies. Sans jamais dénaturer la tradition maritime, nous innovons pour améliorer sans cesse nos services. Notre ambition est d'accompagner les évolutions du secteur tout en restant fidèles aux fondamentaux du métier de consignataire.
-                        La culture de BluePort Solutions s'articule autour de quatre valeurs fondamentales :
-                        Engagement : une fiabilité opérationnelle sans compromis, pour servir au mieux les intérêts de nos clients armateurs.
-                        Innovation : des solutions modernes et performantes, pensées pour les besoins de demain comme prolongement naturel de notre savoir-faire.
-                        Éco-responsabilité : une attention constante à réduire l'empreinte environnementale de chaque escale et à promouvoir des pratiques portuaires durables.
-                        Transmission : la valorisation du capital humain et du savoir maritime ; nous formons les talents de demain et perpétuons l'expertise locale.
-                        </p>
-                </div>
-            </div>
-        </section>
+                <h2 data-translate="hero_title">BluePort Solutions, consignataire maritime à Nantes Saint-Nazaire</h2>
+                <p data-translate="hero_subtitle">Au service
 
-        <section id="services" class="section">
-            <h2>Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-ship"></i>
-                    <h3>Consignation maritime – Nos prestations classiques</h3>
-                    <p>
-                        En tant que consignataire maritime complet, BluePort Solutions prend en charge toutes les étapes de l'escale d'un navire. Nos équipes coordonnent l'ensemble des opérations portuaires, administratives et logistiques afin de représenter au mieux les intérêts de l'armateur. Nos prestations incluent notamment :
-Accueil du navire et assistance à l'équipage : organisation de l'accostage, accueil du capitaine et de l'équipage dès l'arrivée au port, aide aux démarches d'entrée et sortie.
-Gestion des formalités administratives et réglementaires : prise en charge des déclarations auprès des autorités portuaires, douanières, services d'immigration et capitainerie. Nous veillons à ce que toutes les autorisations et documents (manifeste, connaissements, documents de sûreté) soient en règle dans les meilleurs délais.
-Coordination des opérations portuaires : liaison avec les pilotes, remorqueurs et opérateurs de terminal pour l'amarrage du navire, supervision des opérations de chargement/déchargement avec les manutentionnaires, suivi du planning d'escale en temps réel.
-Avitaillement et services au navire : organisation de l'avitaillement en combustible (bunkering), en eau, vivres et autres provisions pour le bord. Nous facilitons également les services techniques (approvisionnement pièces détachées, réparations d'escale, santé équipage, relèves de l'équipage si nécessaire).
-Interface avec les autorités et partenaires locaux : en tant qu'unique interlocuteur local de l'armateur, nous communiquons en permanence avec la capitainerie, les autorités portuaires, la douane, la police aux frontières, ainsi qu'avec les consignataires de cargaison, les courtiers d'affrètement et autres parties prenantes. Ceci garantit une information transparente à tous les niveaux et une résolution rapide des éventuels incidents.
-Suivi et compte-rendu d'escale : à l'issue de chaque escale, nous fournissons aux armateurs un bilan complet (rapports d'opérations, listes de frais portuaires, documentation réglementaire) en toute transparence. Nos services sont disponibles 24h/24 et 7j/7, parce que l'activité portuaire ne s'arrête jamais et que la réactivité est clé pour nos clients.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-anchor"></i>
-                    <h3>NavTrack Escale – Plateforme numérique de suivi en temps réel</h3>
-                    <p>
-                        Dans le prolongement de nos services traditionnels, BluePort Solutions propose des outils numériques innovants pour optimiser la gestion des escales. NavTrack Escale est notre plateforme digitale actuelle de suivi d'escale en temps réel. Accessible via un portail sécurisé, NavTrack Escale permet à nos clients armateurs, affréteurs ou opérateurs de suivre et de piloter chaque escale de manière transparente et efficace, en complément de l'accompagnement de nos agents.
-Fonctionnalités principales de NavTrack Escale :
-Suivi en direct des formalités et opérations : chaque étape clé de l'escale est enregistrée et visible en temps réel (arrivée en rade, amarrage, début/fin de chargement, inspections douanières, clearance de départ, etc.). Le statut des formalités administratives (douane, immigration, inspections vétérinaires...) est mis à jour en continu pour une traçabilité totale.
-Notifications automatiques : le système envoie des alertes instantanées aux parties prenantes (armateur, agent, client, autorité) à chaque événement important ou en cas de retard imprévu. Par exemple, l'armateur reçoit une notification dès que le navire est à quai ou lorsque le chargement est achevé.
-Espace documentaire sécurisé : tous les documents d'escale sont centralisés sur la plateforme (manifestes, connaissements électroniques, certificats, rapports d'escale, factures portuaires). Cet espace partagé sécurisé facilite les échanges d'informations sans emails dispersés, et assure la disponibilité immédiate de chaque document pour les ayants droit.
-Planning collaboratif et communication : NavTrack Escale intègre un agenda collaboratif où le consignataire, le port et le client peuvent partager le planning prévisionnel de l'escale et le mettre à jour en temps réel. Un système de messagerie interne sécurisé permet aux différents acteurs (agent, capitaine, manutentionnaire, etc.) de communiquer instantanément et de consigner les décisions ou changements durant l'escale.
-Bénéfices pour nos clients : Grâce à NavTrack Escale, nos clients bénéficient d'une visibilité totale sur le déroulement de l'escale et peuvent mieux anticiper les aléas. La dématérialisation et l'automatisation offertes par l'outil réduisent les délais d'escale et limitent le risque d'erreurs ou de doublons administratifs. En un coup d'œil, un armateur peut suivre l'avancement de son navire et disposer de tous les éléments pour prendre des décisions rapides. Cette transparence renforce également la confiance et la collaboration entre tous les acteurs de la chaîne portuaire.
-<p><strong>Tarifs:</strong></p>
-<p>NavTrack Escale est proposé sous forme d'abonnement modulable selon le volume d'escales. Typiquement, une formule mensuelle de 250 € à 1200 €, en fonction de l'activité. Contactez notre équipe commerciale pour un devis adapté.
-
-                    </p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-compass"></i>
-                    <h3>EcoPort AI – Vers l'escale éco-optimisée de demain</h3>
-                    <p>
-                        Toujours tourné vers l'avenir, BluePort Solutions prépare dès aujourd'hui les solutions de consignation de demain. EcoPort AI est un assistant d'escale intelligent et éco-responsable qui combine intelligence artificielle (IA), blockchain et objets connectés (IoT) afin d'optimiser chaque escale selon des critères à la fois opérationnels et environnementaux.
-Avec EcoPort AI, nous envisageons une escale maritime "augmentée", où les technologies de pointe viennent prolonger le travail de l'agent consignataire pour des opérations encore plus efficaces, sûres et durables. Ce service s'intègre naturellement dans la continuité de nos prestations, en répondant aux défis futurs du secteur.
-Objectifs et fonctionnalités envisagés d'EcoPort AI :
-Planification prédictive de l'escale : grâce à des algorithmes d'IA exploitant d'innombrables données (prévisions météorologiques, état de la mer, trafic maritime, disponibilité des quais, horaires marées...), EcoPort AI pourra recommander la fenêtre d'escale idéale et optimiser la séquence des opérations. L'objectif est de réduire les temps d'attente et d'améliorer l'efficacité globale, tout en s'adaptant en temps réel aux imprévus.
-Optimisation énergétique et réduction des émissions : EcoPort AI intègre des critères d'éco-efficacité dans la gestion de l'escale. Il s'agit, par exemple, de minimiser le temps d'escale inutile afin de réduire la consommation de carburant à quai, ou d'adapter la logistique pour éviter des manutentions superflues. Un suivi en temps réel des émissions de CO₂ pendant l'escale peut être proposé aux armateurs, avec un bilan carbone précis et certifié à la clé.
-Traçabilité et transparence renforcées : en utilisant la technologie blockchain, toutes les transactions documentaires de l'escale (échange de connaissements électroniques, certificats, autorisations, rapports) peuvent être sécurisées et infalsifiables. Cela apporterait une confiance accrue dans la chaîne documentaire portuaire et une transparence totale vis-à-vis des parties prenantes et des régulateurs.
-Intégration de capteurs intelligents (IoT) : des capteurs connectés, installés sur le port et à bord des navires, fourniraient en continu des données critiques (position du navire, état des amarres, température des cargaisons sensibles, détection d'éventuelles fuites ou incidents techniques). Ces informations, analysées par EcoPort AI, permettent d'anticiper les incidents et d'alerter instantanément les équipes en cas de besoin, renforçant ainsi la sécurité de l'escale.
-Vers une consignation 4.0 : EcoPort AI incarne la volonté de BluePort Solutions de rester à la pointe des évolutions du métier de consignataire. Ce service contribuera à faire de BluePort un acteur de référence de la transition numérique et écologique des ports. En intégrant les normes environnementales nous pouvons proposer à nos clients armateurs des escales plus rapides, plus vertueuses sur le plan environnemental, et parfaitement transparentes.
-EcoPort AI s'appuie sur notre expérience actuelle et sur les retours de NavTrack Escale. Pas à pas, BluePort Solutions prépare ainsi l'avenir en gardant le cap sur sa mission première : servir l'armateur avec excellence, aujourd'hui comme demain.
-<p><strong>Tarifs:</strong></p>
-<p>Les tarifs seront adaptés aux fonctionnalités avancées. Nous prévoyons un coût unitaire de l'ordre de 800–1500 € par escale pour les gros navires commerciaux (supérieurs à 150 m), ou une formule d'abonnement mensuel équivalent pour un usage récurrent.
-
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="recrutement" class="section">
-            <h2>Recrutement</h2>
-            <div class="job-grid">
-                <div class="job-card">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>Chargé(e) de Coordination d'Escales (CDI – Saint-Nazaire)</h3>
-                    <div class="job-description">
-                        <p><strong>Missions :</strong></p>
-                        <p>Superviser l'ensemble des formalités administratives et des opérations portuaires lors des escales de navires, en veillant au respect des procédures et des délais.
-                            Utiliser la plateforme numérique NavTrack Escale pour coordonner en temps réel les interactions avec les différents intervenants (autorités, terminaux, clients) et pour assurer la traçabilité de chaque action.
-                            Être le point de contact principal des armateurs, équipages et autorités locales tout au long de l'escale, en apportant des réponses rapides et adaptées à chaque demande.
-                            </p>
-                        
-                        <p><strong>Profil recherché :</strong></p>
-                        <p>Bac+3/5 en logistique, transport maritime ou gestion portuaire.
-                            Connaissance approfondie des procédures portuaires, des documents d'escale et de la réglementation maritime.
-                            Rigueur, réactivité et sens de la diplomatie dans les relations professionnelles. Une première expérience opérationnelle en agence maritime ou en environnement portuaire est un plus
-                            </p>
-                    </div>
-                    <a href="mailto:jobs@blueport-solutions.fr?subject=Candidature - Chargé(e) de Coordination d'Escales (CDI – Saint-Nazaire)" class="apply-btn">Postuler</a>
-                </div>
-
-                <div class="job-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Data Analyst Maritime & IA (CDI – Saint-Nazaire, télétravail partiel possible)</h3>
-                    <div class="job-description">
-                        <p><strong>Missions :</strong></p>
-                        <p>Concevoir et développer des algorithmes d'analyse et d'optimisation pour le projet EcoPort AI, notamment sur la planification des escales et l'efficacité énergétique.
-                            Exploiter de larges jeux de données maritimes (météo, trafic naval, performance énergétique, etc.) pour en dégager des modèles prédictifs pertinents. Mettre en place des tableaux de bord et indicateurs (BI) afin de suivre les progrès en temps réel.
-                            Collaborer étroitement avec nos développeurs logiciels et nos ingénieurs maritime/portuaire pour intégrer les solutions d'IA dans l'écosystème existant. Participer à la veille technologique sur les sujets d'IA, de blockchain et d'IoT appliqués au secteur portuaire.
-                            </p>
-                        
-                        <p><strong>Profil recherché :</strong></p>
-                        <p>Bac+5 (école d'ingénieur, master) en Data Science, en informatique ou en ingénierie maritime avec spécialisation en analyse de données.
-                            Maîtrise des outils data et programmation : Python, R, SQL, et idéalement des plateformes de business intelligence (Type Power BI ou équivalent).
-                            Esprit analytique, goût pour l'innovation et solide intérêt pour le monde portuaire et maritime. Des connaissances en logistique ou exploitation portuaire seront appréciées.
-                            </p>
-                    </div>
-                    <a href="mailto:jobs@blueport-solutions.fr?subject=Candidature - Data Analyst Maritime & IA (CDI – Saint-Nazaire, télétravail partiel possible)" class="apply-btn">Postuler</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <div class="contact-container">
-                <div class="contact-form">
-                    <form id="contact-form">
-                        <input type="text" placeholder="Nom" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Message" required></textarea>
-                        <button type="submit">Envoyer</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <h3>Coordonnées</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 17 Quai des Frégates, 44600 Saint-Nazaire, France</p>
-                    <p><i class="fas fa-phone"></i> +33 1 23 00 00 44</p>
-                    <p><i class="fas fa-envelope"></i> contact@blueport-solutions.fr</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>BluePort Solutions</h4>
-                <p>&copy; 2025 Tous droits réservés</p>
-            </div>
-            <div class="footer-section">
-                <h4>Suivez-nous</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
     <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'fr',
-            includedLanguages: 'en,fr',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-        }, 'google_translate_element');
-    }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'en,fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: true
+            }, 'google_translate_element');
+        }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <button id="back-to-top" class="back-to-top-btn">
-        <i class="fas fa-arrow-up"></i>
-    </button>
 </body>
 </html>
