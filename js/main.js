@@ -1,27 +1,3 @@
-// Données pour le multilingue
-const translations = {
-    fr: {
-        accueil: "Accueil",
-        apropos: "À propos",
-        services: "Services",
-        contact: "Contact",
-        hero_title: "Solutions Innovantes pour votre Entreprise",
-        hero_subtitle: "Expertise, Innovation, Excellence",
-        contact_btn: "Nous contacter",
-        // Ajoutez d'autres traductions ici
-    },
-    en: {
-        accueil: "Home",
-        apropos: "About",
-        services: "Services",
-        contact: "Contact",
-        hero_title: "Innovative Solutions for your Business",
-        hero_subtitle: "Expertise, Innovation, Excellence",
-        contact_btn: "Contact Us",
-        // Ajoutez d'autres traductions ici
-    }
-};
-
 // Gestion du changement de langue
 document.addEventListener('DOMContentLoaded', () => {
     const langButtons = document.querySelectorAll('.lang-btn');
@@ -29,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.dataset.lang;
-            changeLang(lang);
+            // changeLang(lang);
         });
     });
 
@@ -44,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.1
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    const cardObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
@@ -53,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     document.querySelectorAll('.about-card, .service-card').forEach(card => {
-        observer.observe(card);
+        cardObserver.observe(card);
     });
 
     // Gestion du formulaire de contact
@@ -61,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // Ajoutez ici la logique d'envoi du formulaire
             alert('Message envoyé !');
         });
     }
@@ -91,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animation au défilement
-    const observer = new IntersectionObserver((entries) => {
+    const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
@@ -102,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Observe tous les éléments à animer
     document.querySelectorAll('.service-card, .job-card, .hero-content').forEach(el => {
         el.classList.add('animate-on-scroll');
-        observer.observe(el);
+        scrollObserver.observe(el);
     });
 
     // Bouton retour en haut
@@ -123,19 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Fonction de changement de langue
-function changeLang(lang) {
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach(element => {
-        const key = element.dataset.translate;
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
-    document.documentElement.lang = lang;
-}
-
-// Animation smooth scroll pour la navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -143,4 +105,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-}); 
+});
