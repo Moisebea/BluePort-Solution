@@ -84,6 +84,13 @@ header {
     transform: scale(1.05);
 }
 
+/* ...existing code... */
+
+.transparent-logo {
+    opacity: 0.5; /* Adjust transparency */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
 /* Ajustement de la navigation pour aligner avec le logo */
 nav ul {
     display: flex;
