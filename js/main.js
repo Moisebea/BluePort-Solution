@@ -102,17 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Gestion de la transparence du logo
-    const logo = document.querySelector('.logo-img');
-    const videoHeight = document.querySelector('.video-background').offsetHeight;
+    // Remove the logic for logo transparency
+    // const logo = document.querySelector('.logo-img');
+    // const videoHeight = document.querySelector('.video-background').offsetHeight;
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > videoHeight) {
-            logo.classList.add('transparent-logo');
-        } else {
-            logo.classList.remove('transparent-logo');
-        }
-    });
+    // window.addEventListener('scroll', () => {
+    //     if (window.scrollY > videoHeight) {
+    //         logo.classList.add('transparent-logo');
+    //     } else {
+    //         logo.classList.remove('transparent-logo');
+    //     }
+    // });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

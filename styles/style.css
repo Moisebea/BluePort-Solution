@@ -50,7 +50,7 @@ body {
 
 /* Header */
 header {
-    position: fixed;
+    position: relative; /* Change from fixed to relative */
     top: 0;
     left: 0;
     width: 100%;
@@ -67,10 +67,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-}
-
-.logo a {
-    display: block;
+    position: static; /* Ensure the logo is static */
 }
 
 .logo-img {
@@ -80,8 +77,9 @@ header {
     margin: 10px 0;
 }
 
+/* Remove hover effects if not needed */
 .logo-img:hover {
-    transform: scale(1.05);
+    transform: none;
 }
 
 /* ...existing code... */
