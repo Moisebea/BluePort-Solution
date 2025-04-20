@@ -113,18 +113,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 function setGoogleTranslateLanguage(lang) {
-    const translateFrame = document.querySelector('iframe.goog-te-menu-frame');
-    if (!translateFrame) {
-        alert('Google Translate is not fully loaded yet. Please wait a moment and try again.');
-        return;
-    }
+    const checkIframe = setInterval(() => {
+        const translateFrame = document.querySelector('iframe.goog-te-menu-frame');
+        if (translateFrame) {
+            clearInterval(checkIframe); // Stop checking once the iframe is found
 
-    const translateDoc = translateFrame.contentDocument || translateFrame.contentWindow.document;
-    const langButtons = translateDoc.querySelectorAll('.goog-te-menu2-item span.text');
+            const translateDoc = translateFrame.contentDocument || translateFrame.contentWindow.document;
+            const langButtons = translateDoc.querySelectorAll('.goog-te-menu2-item span.text');
 
-    langButtons.forEach(button => {
-        if (button.innerText.toLowerCase().includes(lang)) {
-            button.click();
+            langButtons.forEach(button => {
+                if (button.innerText.toLowerCase().includes(lang)) {
+                    button.click();
+                }
+            });
         }
-    });
+    }, 500); // Check every 500ms
 }
