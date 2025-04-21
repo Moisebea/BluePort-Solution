@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Remplaçons l'ancien gestionnaire de scroll par un nouveau qui garde le header transparent
+    // Remplace l'ancien gestionnaire de scroll par un nouveau qui garde le header transparent
     window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
         header.style.background = 'transparent';
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Gestion spécifique pour le logo (scroll vers le tout haut)
+    // Gestion spécifique pour le logo 
     document.querySelector('.scroll-top').addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
@@ -102,18 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Remove the logic for logo transparency
-    // const logo = document.querySelector('.logo-img');
-    // const videoHeight = document.querySelector('.video-background').offsetHeight;
-
-    // window.addEventListener('scroll', () => {
-    //     if (window.scrollY > videoHeight) {
-    //         logo.classList.add('transparent-logo');
-    //     } else {
-    //         logo.classList.remove('transparent-logo');
-    //     }
-    // });
-
+    
     // Hide logo on scroll
     const logo = document.querySelector('.logo-img');
 
@@ -152,3 +141,5 @@ function setGoogleTranslateLanguage(lang) {
         }
     }, 500); // Check every 500ms
 }
+
+
