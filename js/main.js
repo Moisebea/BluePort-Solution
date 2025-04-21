@@ -113,6 +113,17 @@ document.addEventListener('DOMContentLoaded', () => {
     //         logo.classList.remove('transparent-logo');
     //     }
     // });
+
+    // Hide logo on scroll
+    const logo = document.querySelector('.logo-img');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            logo.classList.add('invisible-logo');
+        } else {
+            logo.classList.remove('invisible-logo');
+        }
+    });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

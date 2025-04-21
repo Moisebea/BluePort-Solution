@@ -89,6 +89,11 @@ header {
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 
+.invisible-logo {
+    opacity: 0; /* Make the logo invisible */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
 /* Ajustement de la navigation pour aligner avec le logo */
 nav ul {
     display: flex;
